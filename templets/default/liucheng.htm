@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="zh-CN">
+<!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta name="MobileOptimized" content="320">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/animate-element.css">
+<link rel="stylesheet" href="/css/flexslider.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/blog.css">
+<!--[if lt IE 9]>
+    <script src="http://jubons.cn/wordpress/wp-content/themes/jubons/js/html5shiv.js"></script>
+    <script src="http://jubons.cn/wordpress/wp-content/themes/jubons/js/respond.min.js"></script>
+  <![endif]-->
+
+<script src="/js/jquery-1.9.1.min.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/jquery.scrollTo.min.js"></script>
+<script src="/js/jquery.mousewheel.min.js"></script>
+<script src="/js/jquery.viewport.js"></script>
+<script src="/js/animate-elements.js"></script>
+<script src="/js/jquery.flexslider-min.js"></script>
+<script src="/js/modernizr.custom.49256.js"></script>
+<script src="/js/transition.js"></script>
+<script src="/js/collapse.js"></script>
+<script src="/js/scrollspy.js"></script>
+<script src="/js/site.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="loading_icon"></div>
+<section id="head" class="desktop_full mobile_mt50 proloader mscroll">
+  <div class="full scrollbg anima_3d_top proloader_img" data-loadimg="/images/about1.jpg" style="background-image: url('/images/about1.jpg')"> </div>
+  <div class="btm_cont anima_3d_bottom anim_emt b_to_t">
+    <div class="title wrap c_white">
+      <h2>流程介绍</h2>
+      <h3>Company Introduction</h3>
+      <hr class="title_hr">
+    </div>
+    <div class="flexslider info pmt0 wrap" data-direction=true>
+      <ul class="slides clearfix">
+        <li class="slide-item"> {dede:field.content/} </li>
+      </ul>
+    </div>
+  </div>
+  <div class="icon-arrow-down3 down_arrow"></div>
+</section>
+<script>
+    $(document).ready(function () {
+      down_arrow.init();
+      slider.init();
+      proloader.init();
+      if ($("html").hasClass("no-touch")) mouseScroll.init();
+      $('#nav>li.about a').addClass('active');
+    })
+  </script> 
+{dede:include filename="footer.htm"/}
+<div id="bg_mask" class="pop_bg"></div>
+</body>
+</html>

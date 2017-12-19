@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="zh-CN">
+<!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta name="MobileOptimized" content="320">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/animate-element.css">
+<link rel="stylesheet" href="/css/flexslider.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/blog.css">
+<!--[if lt IE 9]>
+    <script src="http://jubons.cn/wordpress/wp-content/themes/jubons/js/html5shiv.js"></script>
+    <script src="http://jubons.cn/wordpress/wp-content/themes/jubons/js/respond.min.js"></script>
+  <![endif]-->
+
+<script src="/js/jquery-1.9.1.min.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/jquery.scrollTo.min.js"></script>
+<script src="/js/jquery.mousewheel.min.js"></script>
+<script src="/js/jquery.viewport.js"></script>
+<script src="/js/animate-elements.js"></script>
+<script src="/js/jquery.flexslider-min.js"></script>
+<script src="/js/modernizr.custom.49256.js"></script>
+<script src="/js/transition.js"></script>
+<script src="/js/collapse.js"></script>
+<script src="/js/scrollspy.js"></script>
+<script src="/js/site.js"></script>
+</head>
+<body data-spy="scroll" data-target=".scroll-nav">
+{dede:include filename="head.htm"/}
+<section id="job-photos" class="desktop_full mobile_mt50 mscroll">
+  <div class="flexslider control_center2 anima_3d_top">
+    <ul class="slides clearfix">
+      <li class="slide-item" data-img="/images/hr1.jpg"> 
+        <!--          <div class="loading_icon"></div>--> 
+      </li>
+      <li class="slide-item" data-img="/images/hr2.jpg"> 
+        <!--          <div class="loading_icon"></div>--> 
+      </li>
+    </ul>
+    <a class="direction_nav prev_btn">
+    <div class="icon-arrow-left3 trans"></div>
+    </a> <a class="direction_nav next_btn">
+    <div class="icon-arrow-right3 trans"></div>
+    </a> </div>
+</section>
+<section id="job-intro" class="desktop_full bg_white align_c mscroll">
+  <div class="full vertical_obj hwrap anima_3d_top">
+    <div class="vertical_cont">
+      <div class="wrap">
+        <h2 class="mb30 c_red">Talent Concept</h2>
+        <h4 class="mb10">设计主创人员都拥有扎实的设计基本功底和狂热的设计激情</h4>
+        <h4 class="mb10">刻苦勤奋不全是褒义词</h4>
+        <h4 class="mb10">好方案得不到完善的执行 我们会愤怒</h4>
+        <h4 class="mb10">我们欢迎有思想的设计师</h4>
+        <h4 class="mb10">具有新思想的人在其思想获得成功之前都是怪人</h4>
+        <h4 class="mb10">创客源码具有疯狂创造欲望的设计团队</h4>
+        <h4>创客源码是一个充满热情的创意基地，唤起我们对于艺术的狂想和追求</h4>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="job-post" class="full mscroll">
+  <div class="full scrollbg position_a anima_3d_top hide_on_mobile" style="background-image: url(/images/hr3.jpg)"> </div>
+  <div class="full vertical_obj anima_3d_bottom">
+    <div class="vertical_cont clearfix">
+      <div class="job_desk_cont">
+        <h2 class="mb20">Job Post</h2>
+        <ul id="job_btns" class="clearfix mb20">
+          {dede:arclist titlelen='' row='8' typeid=''}
+          <li><a class="btn_white icon-head box_shadow trans">[field:title/]</a></li>
+          {/dede:arclist}
+        </ul>
+        <div class="hide_on_mobile"> <a href="mailto:{dede:global.cfg_email/}" class="btn_text icon-mail trans">{dede:global.cfg_email/}</a> <a href="tel:{dede:global.cfg_tel/}" class="btn_text icon-phone trans">{dede:global.cfg_tel/}</a> <a id="process_btn" class="btn_text icon-chevron-right trans">应聘流程</a> </div>
+        <div class="hide_on_desktop">
+          <h4 class="mb10">应聘流程</h4>
+          <p>1. 请将简历和作品集一起发mail到我们的邮箱里</br>
+            2. 当您的简历通过审核之后，我们会通过电话与你简单地交谈</br>
+            3. 通过了电话面试的设计师，将会被约到我们公司来面试。</p>
+          <div class="mb10 clearfix"> <a href="mailto:{dede:global.cfg_email/}" class="btn_text icon-mail trans">{dede:global.cfg_email/}</a> <a href="tel:010-12345678" class="btn_text icon-phone trans">{dede:global.cfg_tel/}</a> </div>
+          <span>有任何问题请与我们电话联系。</span> </div>
+      </div>
+    </div>
+  </div>
+  <div id="job_infos" class="pop_window trans">
+    <div class="pop_bg"></div>
+    <div class="box bg_white box_shadow2 trans">
+      <div class="cont">
+        <ul>
+          {dede:list pagesize='12'}
+          <li class="item">
+            <h3 class="c_red">[field:title/]</h3>
+            [field:body/] </li>
+          {/dede:list}
+        </ul>
+      </div>
+      <a href="javascript:jobs.closeInfo()" class="icon_btn close_btn icon-cross trans"></a> </div>
+  </div>
+  <div id="job_process" class="pop_window trans">
+    <div class="pop_bg"></div>
+    <div class="box bg_white box_shadow2 trans">
+      <div class="cont">
+        <h4 class="mb10">应聘流程</h4>
+        <p>1. 请将简历和作品集一起发mail到我们的邮箱里</br>
+          2. 当您的简历通过审核之后，我们会通过电话与你简单地交谈</br>
+          3. 通过了电话面试的设计师，将会被约到我们公司来面试。</p>
+        <div class="mb10 clearfix"> <a href="mailto:jubons_hr@163.com" class="btn_text icon-mail trans">jubons_hr@163.com</a> <a href="tel:010-12345678" class="btn_text icon-phone trans">010-84243319</a> </div>
+        <span>有任何问题请与我们电话联系。</span> </div>
+      <a href="javascript:jobs.closeInfo()" class="icon_btn close_btn icon-cross trans"></a> </div>
+  </div>
+</section>
+<section id="job-info" class="wrap hwrap pmt0 bg_white mscroll">
+  <p class="p18 anim_emt b_to_t">对于设计企业来说，人才管理是企业发展当中的非常重要的组成部分，凡成功的企业， 其门下都汇集了大批的精英人才，而在创客源码的认知中，亦是如此。 </p>
+  <h3 class="mb20 anim_emt b_to_t">我们能够为你做的<br>
+    We can do for you</h3>
+  <hr class="full_hr">
+  <p class="anim_emt b_to_t">我们注重设计人才的培养，为此完善自我，为设计师打造优越的发展平台。我们认为这个平台必须满足五个最为重要的条件：品牌效应、公平合理的奖励制度、自由空间、打造学习型的团队、良好的工作关系。</p>
+  <ul class="list_text2 anim_emt b_to_t">
+    <li class="mb20">品牌效应，指的是品牌影响力和企业文化，品牌知名度的大小关系着设计人才发展空间的大小，发展空间的大小又影响着人才薪酬的高低，创客源码拥有众多优秀客户群体，提供更广阔的视野和自我审视的平台，这样的影响力能带给设计师更大的发展空间去施展自己的才能。</li>
+    <li class="mb20">我们用公平合理的奖励制度激发设计师对工作的衷心和热情，在给予设计人才最为合理的酬劳之外，公司还会实行股份共享制度，将股份分支给优秀的管理层人员，公开而平等，这样设计师可以得到更大的发展机会，感受到自己有更大的责任。同时，在设计师成长的不同阶段给予不同的职位和职责，让他们有不同的尝试，这样的团队能够让设计师最快速度的成长。</li>
+    <li class="mb20">我们希望实现无管理的管理，希望企业文化能够让团队自觉的具有组织性，而我们要将注意力集中专注于空间的创造力，让设计价值最大化，而不是将注意力用于对设计师的制约和处罚，制度的目的是为了把所有流程理顺，并不是要求和处罚，秩序依靠的是企业文化。在创客源码，我们更加注重对设计师的文化修养，希望团队拥有相同的文化韵律，将成为分享给您的最大隐形福利。</li>
+    <li class="mb20">创客源码鼓励和带领着团队赋有积极性、独立性和冒险精神，“自由空间”是基本条件，设计师都希望权利阶层能给予自己创意空间，而创客源码这种更为轻松的管理模式让设计师们感受到“放松自如”，也能够助力于设计项目顺利开展。</li>
+    <li class="mb20">注重团队的学习氛围，不管是对于企业、团队还是设计师来说，都有着深刻的意义，这是成长的过程。打造学习型团队有很多方式方法，我们会经常参与和主办分享性活动，我们认为设计企业要更加开放，不要束之高阁，闭门造车，创造优秀作品的同时，也学会更好的营销它，让更多的人认同并享有它。通过这样的交流活动，每次都让团队感到颇为受益，也有助于打造创作型的团队、学习型的团队。</li>
+    <li>我们认为，和谐的工作氛围，良好的工作关系，是设计师对企业的另一个诉求。创客源码会注重彼此之间的相互尊重，尊重设计师的个体差异和文化背景、不同的信仰等，同时，从情感出发，让设计师们有归属感，做到了以人为本的管理，这些促成了人才汇集的基本，而设计师与我们相互创造价值也就是水到渠成了。</li>
+  </ul>
+</section>
+<section class="wrap hwrap">
+  <h3 class="mb20 anim_emt b_to_t">我们希望你是什么样的人<br>
+    What kind of person we want</h3>
+  <hr class="full_hr">
+  <ul class="list_text2 anim_emt b_to_t">
+    <li class="mb20">
+      <h4 class="mb10">我们希望你是低调而安静的人</h4>
+      很多“有想法”的年轻设计师以不修边幅作为自己的另类宣言，我必须要说这是极其落后的观念了，而且十分不尊重他人。不会有客户愿意将项目交给一个自己都不能打理好的设计师。我们认为设计师是应该是优雅有品味的人，是谦卑的人，是随和的人，是懂得倾听的人。 <br>
+      我们认为设计师要懂得在“静”中体会设计，不要跟着大环境一样心态很浮躁，我们不喜欢性格张狂的人，我们喜欢一步一个脚印，安静中成长，安静中卓越事业的人。</li>
+    <li class="mb20">
+      <h4 class="mb10">我们希望你拥有扎实的设计基本功底</h4>
+      扎实的设计功底能够协助创意过程顺利进行，不要出一些天马行空方案，还要夸夸其谈，我们希望设计师有足够的鉴赏力和工艺上的可行性分析能力。 <br>
+      只要有扎实的基本功，用起来才能应用自如，否则一切雕虫小技是经不起时间的考验，这是要经过长期的实践工作和经验积累才能达到一定的高度，如果你确定要从从事设计师的工作，那么你的作品便是你的未来和一切！没有客户会相信一个仅会夸夸其谈而没有卓越视觉表现的设计师。从创客源码成立到现在的十余年，我们总结出好的作品胜过千言万语。</li>
+    <li class="mb20">
+      <h4 class="mb10">我们希望你是执行力很强的人</h4>
+      只有“执行”才能将想法转化成效益和成果，这需要责任感、能力、态度的配合。</li>
+    <li class="mb20">
+      <h4 class="mb10">我们希望你是一个有思想的设计师</h4>
+      我们希望你有浓郁的人格魅力，拥有积极向上的价值导向和灵魂，我们希望大家聚在一起就是一股正能量。 <br>
+      一个有思想的设计师是阳光的、有正能量的，我们希望自己的作品是有内涵的，有故事的，有文化的，那么设计师就必须有内涵、有故事、有文化，才能辅助自己的设计功底，做出优秀的作品。如果你是中国本土设计师，我们希望你认同中国传统文化，有发扬的责任感，富有社会责任感。</li>
+    <li class="mb20">
+      <h4 class="mb10">我们希望你是热爱学习的人</h4>
+      学习的态度决定一个人的命运，学习的态度也决定了一个团队、甚至一个企业的命运。我们喜欢热爱学习的人，有学习的习惯，学习的能力，多看书，多旅游，多去优秀设计的空间去观摩，这是自我修炼的过程，也是自我成就的过程。</li>
+    <li class="mb20">
+      <h4 class="mb10">我们希望你是随和的人</h4>
+      我们发现越是有涵养、有底蕴的人越随和，越是内心空洞的人越高傲。我们相信成功一定源于团队之间紧密的交流与协作，我们喜欢大家庭，我们反对小团体，我们欢迎积极的批评、勇敢的建议，反对私下的抱怨。因为积极的态度是解决问题的方法，消极的抱怨是逃避问题的方法。</li>
+    <li>
+      <h4 class="mb10">我们希望你是思维清晰的人</h4>
+      我们喜欢善于整理的人，空间的整理、信息的整理和思绪的整理。我们希望你是一个“简单”的人，办公桌上规整，电脑桌面也干净利落，思维清晰。整洁的工作习惯十分重要，文件的归档、草图的收集、桌面是否整洁等都可以体现你的整理能力和对细节的关注。</li>
+  </ul>
+</section>
+<section class="wrap hwrap bg_white">
+  <h3 class="mb20 anim_emt b_to_t">工资待遇<br>
+    Treatment</h3>
+  <hr class="full_hr">
+  <p class="anim_emt b_to_t">创客源码公司希望与您共同创造价值的同时共同分享利益。创客源码为优秀员工提供创业的可能性，当您通过自己的努力晋升到总监及以上级别时，公司将会邀请您成为公司合伙人团队的一员，并按照国际通行的合伙人分配制度分享利润分成，如果您想实现创业梦想，并且需要一个优秀的团队支撑您的梦想，那就投简历过来吧，相信这份简历将会扭转您的职业命运。</p>
+  <div class="anim_emt b_to_t">
+    <h4 class="mb20">薪酬体系</h4>
+    <p><span class="c_red">设计助理：</span>基本工资+社会基本保险+年终奖金。我们非常愿意也非常擅长培养助理设计师。创客源码将会全方面的提高您的专业能力，培养您的艺术底蕴，如果您想有一个不一样的起点，联系我们吧，相信我们之间的缘分。</p>
+    <p><span class="c_red">主案设计师：</span>基本工资+绩效奖金+社会基本保险+年终奖金，其中绩效奖金根据您每月的表现和业绩而评定，我们强调的是快速完成任务，这需要您拥有一定得专业功底来支撑您带领团队高效、高质的运作。</p>
+    <p><span class="c_red">设计总监：</span>基本工资+绩效奖金+社会基本保险+年终奖金，属于项目合伙人团队的一员，享有项目利润分成。创客源码企业将给设计总监更大发展的空间，您将有机会施展您的设计创造力，并且有自己的设计团队完成您的创想，同时我们需要您拥有优秀的沟通能力，能够很好的与客户商议工作细节。</p>
+    <p><span class="c_red">设计合伙人：</span>年薪30~50万，属于企业合伙人团队人员，享有丰厚的企业利润分成，全权负责创客源码设计团队运作，并担任客户关系负责人、谈判人。创客源码提供这样的平台，为您实现梦想做好保障，规避了自我创业的风险和投资瓶颈，解决了您的后顾之忧。</p>
+  </div>
+</section>
+<script>
+    $(document).ready(function () {
+      jobs.init();
+      slider.init();
+      //$('footer').removeClass('mscroll');
+      $('body').scrollspy({
+        target: '.scroll-nav'
+      });
+      if ($("html").hasClass("no-touch")) mouseScroll.init();
+      $('#job_infos .item ul').addClass('list_text');
+      $('#nav>li.join-us a').addClass('active');
+    })
+  </script> 
+{dede:include filename="footer.htm"/}
+<div id="bg_mask" class="pop_bg"></div>
+</body>
+</html>

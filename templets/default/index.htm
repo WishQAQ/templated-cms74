@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="zh-CN">
+<!--<![endif]-->
+
+<head>
+<!--
+                       (0 0)
+   +-------------oOO----(_)----------------+
+   |           Powered By 织梦猫           |
+   |            www.dedemao.com            |
+   |        E-mail:admin@dedemao.com       |
+   +--------------------------oOO----------+
+                      |__|__|
+                       || ||
+                      ooO Ooo
+-->
+<meta charset="utf-8">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="MobileOptimized" content="320">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-widthother/, initial-scale=1other/, user-scalable=no">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/animate-element.css">
+<link rel="stylesheet" href="/css/flexslider.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/blog.css">
+<!--[if lt IE 9]>
+    <script src="http://jubons.cn/wordpress/wp-content/themes/jubons/js/html5shiv.js"></script>
+    <script src="http://jubons.cn/wordpress/wp-content/themes/jubons/js/respond.min.js"></script>
+  <![endif]-->
+
+<script src="/js/jquery-1.9.1.min.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/jquery.scrollTo.min.js"></script>
+<script src="/js/jquery.mousewheel.min.js"></script>
+<script src="/js/jquery.viewport.js"></script>
+<script src="/js/animate-elements.js"></script>
+<script src="/js/jquery.flexslider-min.js"></script>
+<script src="/js/modernizr.custom.49256.js"></script>
+<script src="/js/transition.js"></script>
+<script src="/js/collapse.js"></script>
+<script src="/js/scrollspy.js"></script>
+<script src="/js/site.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<section id="banner" class="full mscroll">
+  <div class="loading_icon"></div>
+  <div class="flexslider control_b proloader anima_3d_top">
+    <ul class="slides clearfix">
+      {dede:arclist titlelen='50' row='1' typeid='2'}
+      <li class="slide-item scrollbg pos_b proloader_img" style="background-image: url('[field:litpic/]')" data-loadimg="[field:litpic/]">
+        <div class="btm_cont">
+          <div class="title wrap c_white">
+            <h3>Featured Project</h3>
+            <hr class="title_hr">
+          </div>
+          <a href="[field:arcurl/]" class="info wrap">
+          <div class="bg trans"></div>
+          <span class="icon_after trans">查看项目详情</span>
+          <div class="title">
+            <h2 class="mb5 trans">[field:title/]</h2>
+            <h4>[field:shorttitle/]</h4>
+          </div>
+          </a> </div>
+      </li>
+      {/dede:arclist}
+    </ul>
+    <a class="direction_nav prev_btn">
+    <div class="icon-arrow-left3 trans"></div>
+    </a> <a class="direction_nav next_btn">
+    <div class="icon-arrow-right3 trans"></div>
+    </a> </div>
+  <div class="icon-arrow-down3 down_arrow"></div>
+</section>
+<section class="desktop_full vertical_obj bg_white mscroll">
+  <div class="hwrap vertical_cont anima_3d_top anim_emt b_to_t">
+    <div class="wrap">
+      <h3 class="mb10">设计的意义在于寻求人、建筑、自然之间相融与相生的智慧</h3>
+      <h3 class="c_red">The meaning of the design is to seek harmony between peopleother/, architectureother/, natural and of wisdom</h3>
+      <p class="p18">创客源码是中国最资深的设计顾问及工程管理企业之一，2005年由张海涛先生创建并主持，总部设立于中国北京。创客源码致力于为客户提供“项目全程一体化解决方案”，业务范围涵盖：建筑设计、室内设计、陈设设计、灯光顾问、导视顾问、工程管理。</p>
+      <a href="/about" class="btn_red trans">ABOUT US</a> <a href="/services" class="btn_red trans">SERVICES</a> </div>
+  </div>
+</section>
+<section class="home_grid desktop_full vertical_obj mscroll">
+  <div class="hwrap vertical_cont">
+    <div class="wrap">
+      <h2 class="anim_emt b_to_t">Projects</h2>
+      <ul class="clearfix anima_3d_top anim_emt b_to_t">
+        {dede:arclist titlelen='' row='4' typeid='2'}
+        <li> <a href="[field:arcurl/]" class="box_shadow trans"> <img src="[field:litpic/]" alt="" class="trans">
+          <div class="title">
+            <h5 class="mb5 trans">[field:title/]</h5>
+            <h5 class="hide_in_mobile trans">[field:shorttitle/]</h5>
+            <hr class="trans">
+          </div>
+          </a> </li>
+        {/dede:arclist}
+      </ul>
+      <a href="/case" class="btn_red center_btn trans anim_emt b_to_t">ALL PROJECTS</a> </div>
+  </div>
+</section>
+<section class="full align_c mscroll">
+  <div class="full scrollbg position_a anima_3d_top" style="background-image: url('/images/indexhr.jpg')"> </div>
+  <div class="full vertical_obj anima_3d_bottom anim_emt b_to_t">
+    <div class="vertical_cont">
+      <div class="job_desk_cont">
+        <h2 class="mb20">Join us</h2>
+        <h3 class="mb5">创客源码是一个充满热情的创意基地</h3>
+        <h3 class="mb30">唤起我们对于艺术的狂想和追求</h3>
+        <a href="/jobs" class="btn_red center_btn trans">VIEW MORE</a> </div>
+    </div>
+  </div>
+</section>
+<script>
+    $(document).ready(function () {
+//      var $first_slide = $("#banner .proloader").find("ul li:first-child");
+//      $first_slide.addClass("proloader_img");
+//      var imgurl = $first_slide.css("background-image").replace("url("other/,"").replace(")"other/,"");
+//     $first_slide.data("loadimg"other/, imgurl);
+      down_arrow.init();
+      slider.init();
+      proloader.init();
+      if ($("html").hasClass("no-touch")) mouseScroll.init();
+    })
+  </script> 
+{dede:include filename="footer.htm"/}
+<div id="bg_mask" class="pop_bg"></div>
+</body>
+</html>

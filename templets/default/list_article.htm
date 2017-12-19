@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta name="MobileOptimized" content="320">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/animate-element.css">
+<link rel="stylesheet" href="/css/flexslider.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/blog.css">
+<!--[if lt IE 9]>
+    <script src="http://jubons.cn/wordpress/wp-content/themes/jubons/js/html5shiv.js"></script>
+    <script src="http://jubons.cn/wordpress/wp-content/themes/jubons/js/respond.min.js"></script>
+  <![endif]-->
+
+<script src="/js/jquery-1.9.1.min.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/jquery.scrollTo.min.js"></script>
+<script src="/js/jquery.mousewheel.min.js"></script>
+<script src="/js/jquery.viewport.js"></script>
+<script src="/js/animate-elements.js"></script>
+<script src="/js/jquery.flexslider-min.js"></script>
+<script src="/js/modernizr.custom.49256.js"></script>
+<script src="/js/transition.js"></script>
+<script src="/js/collapse.js"></script>
+<script src="/js/scrollspy.js"></script>
+<script src="/js/site.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="wrap hwrap">
+  <section class="blog_cont blog_top">
+    <ul class="blog_list clearfix">
+      {dede:list pagesize='12'}
+      <li class="blog_list_item bg_white anim_emt b_to_t"> <a href="[field:arcurl/]" target="_blank" class="box_shadow trans">
+        <div class="info">
+          <h3 class="title trans">[field:title/]</h3>
+          <hr class="trans">
+          <p>[field:description function='cn_substr(@me,180)'/]</p>
+          <span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span> </div>
+        </a> </li>
+      {/dede:list}
+    </ul>
+  </section>
+  <section class="sidebar hide_on_mobile anim_emt b_to_t">
+    <h4>{dede:global.cfg_webname/}</h4>
+    <h1>{dede:field name='typeid' function="GetTopTypename(@me)" /}</h1>
+    <hr class="full_hr">
+    <h3 class="mb10">Tags</h3>
+    <ul class="tags clearfix">
+       {dede:tag row='10' getall='1' sort='month'}
+      <li class="cat-item cat-item-11"><a href="/plus/search.php?q=[field:tag /]" >[field:tag /]</a> </li>
+      {/dede:tag} 
+    </ul>
+  </section>
+</div>
+<script>
+    $(document).ready(function () {
+      tagsnav.init();
+      $('#nav>li.blog a').addClass('active');
+    })
+  </script>
+{dede:include filename="footer.htm"/}
+<div id="bg_mask" class="pop_bg"></div>
+</body>
+</html>

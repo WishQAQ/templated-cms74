@@ -1,0 +1,51 @@
+<footer class="full vertical_obj bg_white mscroll">
+  <div class="vertical_cont contact anima_3d_top">
+    <div class="wrap">
+      <h2 class="c_red">GET IN TOUCH</h2>
+      <ul class="clearfix">
+        <li class="add" > <a class="trans"> <span class="icon icon-location c_red" >
+          <div style="margin:0 auto; width:50px;"><img src="/images/address.png" /></div>
+          </span>
+          <h5 class="trans">{dede:global.cfg_address/}</h5>
+          </a> </li>
+        <li class="tel"> <a href="tel:{dede:global.cfg_tel/}" target="_blank" class="trans"> <span class="icon icon-phone c_red">
+          <div style="margin:0 auto; width:50px;"><img src="/images/tel.png" /></div>
+          </span>
+          <h5 class="trans">{dede:global.cfg_tel/}</h5>
+          </a> </li>
+        <li class="mail"> <a href="mailto:{dede:global.cfg_email/}" target="_blank" class="trans"> <span class="icon icon-mail c_red">
+          <div style="margin:0 auto; width:50px;"><img src="/images/email.png" /></div>
+          </span>
+          <h5 class="trans">{dede:global.cfg_email/}</h5>
+          </a> </li>
+        <li class="qq"> <a href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.cfg_qq/}&site=qq&menu=yes" target="_blank" class="trans"> <span class="icon icon-qq c_red">
+          <div style="margin:0 auto; width:50px;"><img src="/images/qq.png" /></div>
+          </span>
+          <h5 class="trans">在线咨询</h5>
+          </a> </li>
+      </ul>
+    </div>
+  </div>
+  <div class="btm bg_red">
+    <ul id="botm_nav" class="wrap">
+      {dede:channel type='top' row='10'}
+      <li><a href="[field:typeurl/]" class="trans">[field:typename/]<br>
+        [field:seotitle/]</a> </li>
+      {/dede:channel}
+    </ul>
+    <ul class="icp wrap">
+      <li> <span>{dede:global.cfg_powerby/}</span> </li>
+      <li> <a href="http://www.miibeian.gov.cn" target="_blank">{dede:global.cfg_beian/}</a> </li>
+    </ul>
+    <div class="icons bg_red"> <a href="{dede:global.cfg_sina/}" target="_blank" class="icon-weibo trans">
+      <div style="margin:0 auto; width:50px;"><img src="/images/sina.png" /></div>
+      </a> <a href="javascript:" class="jsbtn icon-iconfont-qrcode trans" data-target="#qr-site">
+      <div style="margin:0 auto; width:50px;"><img src="/images/ewm.png" /></div>
+      </a> <a href="javascript:" class="jsbtn icon-wechat trans" data-target="#qr-wechat">
+      <div style="margin:0 auto; width:50px;"><img src="/images/weixin.png" /></div>
+      </a>
+      <div id="qr-site" class="qrcode trans"> <img src="/images/qrcode-site.png" alt=""> </div>
+      <div id="qr-wechat" class="qrcode trans"> <img src="/images/qrcode-wechat.png" alt=""> </div>
+    </div>
+  </div>
+</footer>
